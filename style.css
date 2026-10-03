@@ -1,0 +1,51 @@
+
+/* Interface claire, avec une palette bleu nuit et turquoise. */
+.stApp { background: #f4f7fb; }
+[data-testid="stMainBlockContainer"] { max-width: 1240px; padding-top: 2rem; padding-bottom: 3rem; }
+[data-testid="stSidebar"] { background: #ffffff; border-right: 1px solid #e2e8f0; }
+[data-testid="stSidebar"] [role="radiogroup"] { gap: .35rem; }
+[data-testid="stSidebar"] [role="radiogroup"] label {
+    padding: .55rem .7rem; border-radius: 9px; transition: background .15s;
+}
+[data-testid="stSidebar"] [role="radiogroup"] label:hover { background: #eef7f7; }
+[data-testid="stSidebar"] [role="radiogroup"] label:has(input:checked) {
+    background: #e1f4f1; border-left: 3px solid #0f766e;
+}
+.hero { background: linear-gradient(115deg, #122b40, #164e63); padding: 2rem 2.2rem;
+    border-radius: 20px; margin-bottom: 1.6rem; color: #ffffff; }
+.hero .eyebrow { color: #a7e8dc; letter-spacing: .14em; text-transform: uppercase;
+    font-size: .75rem; font-weight: 700; margin-bottom: .7rem; }
+.hero h1 { font-size: clamp(1.7rem, 3vw, 2.6rem); font-weight: 750; line-height: 1.15;
+    color: #ffffff; padding: 0; margin: 0 0 .7rem; }
+.hero p { color: #d0e4ed; margin: 0; font-size: 1rem; }
+.hero .pill { display: inline-block; margin-top: 1.2rem; padding: .35rem .75rem;
+    border: 1px solid #5b8797; border-radius: 30px; font-size: .8rem; color: #ddfaf4; }
+.brand { color: #16364b; font-size: 1.35rem; font-weight: 800; margin-bottom: .15rem; }
+.brand span { color: #0f766e; }
+.sidebar-sub { color: #64748b; font-size: .82rem; margin-bottom: 1.6rem; }
+[data-testid="stMetric"] { background: #ffffff; border: 1px solid #e2e8f0;
+    padding: 1rem 1.2rem; border-radius: 14px; box-shadow: 0 3px 12px #16364b05; }
+[data-testid="stMetricLabel"] { color: #64748b; }
+[data-testid="stMetricValue"] { color: #16364b; font-weight: 750; }
+[data-testid="stDataFrame"], [data-testid="stExpander"] {
+    border-radius: 12px; overflow: hidden; background: #ffffff;
+}
+[data-testid="stAlert"] { border-radius: 12px; }
+[data-testid="stDownloadButton"] button {
+    background: #0f766e; color: white; border: 0; border-radius: 9px; font-weight: 600;
+}
+[data-testid="stDownloadButton"] button:hover { background: #115e59; color: white; }
+.step { display:flex; gap:.8rem; align-items:center; margin: 1.5rem 0 .7rem; }
+.step-number { background:#0f766e; color:white; border-radius:10px; padding:.6rem .85rem; font-weight:700; }
+.step h2 { margin:0; padding:0; color:#16364b; font-size:1.5rem; }
+.step small { color:#64748b; }
+.abc-card { background:white; border:1px solid #e2e8f0; border-top:4px solid var(--accent);
+    border-radius:13px; padding:1.1rem 1.3rem; margin:.6rem 0 1rem; }
+.abc-card b { color:var(--accent); font-size:.85rem; }
+.abc-card strong { display:block; font-size:2rem; color:#16364b; margin:.35rem 0; }
+.abc-card p { color:#64748b; margin:0; font-size:.85rem; }
+@media (max-width: 640px) {
+    .hero { padding:1.4rem; border-radius:14px; }
+    [data-testid="stMainBlockContainer"] { padding:1rem; }
+    .step h2 { font-size:1.15rem; }
+}
