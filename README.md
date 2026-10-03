@@ -1,4 +1,4 @@
-﻿# StockLab — Devoir libre
+# StockLab — Devoir libre
 
 Application Streamlit pour la classification ABC de 700 articles de stock.
 
@@ -26,7 +26,7 @@ python solution_devoir.py
 
 Les modèles apprennent à reproduire les classes TOPSIS. Les résultats de test ne constituent pas une validation métier des priorités.
 
-L'application charge inventory_data.csv depuis le dossier du projet ; un autre CSV peut être importé dans la barre latérale.
+L'application utilise uniquement le fichier inventory_data.csv du projet.
 Le script génère inventory_avec_classes.csv.
 
 Référence : Kartal et al. (2016), DOI 10.1016/j.cie.2016.06.004.

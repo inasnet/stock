@@ -135,11 +135,10 @@ st.sidebar.caption("PARCOURS DU DEVOIR")
 question = st.sidebar.radio("Choisir une question", TITRES, label_visibility="collapsed")
 st.sidebar.divider()
 st.sidebar.caption("DONNÉES & PONDÉRATION")
-fichier = st.sidebar.file_uploader("Votre fichier inventory_data.csv", type="csv")
 methode = st.sidebar.selectbox("Pondération des cinq critères", ["Entropie", "Kartal (2016)", "Poids égaux"])
 st.sidebar.caption("Entropie : poids calculés à partir des données. Les poids internes de la Table 2 restent inchangés.")
 try:
-    df = pd.read_csv(fichier if fichier else Path(__file__).parent / "inventory_data.csv")
+    df = pd.read_csv(Path(__file__).parent / "inventory_data.csv")
 except Exception as erreur:
     st.error(f"Impossible de lire le CSV : {erreur}")
     st.stop()
